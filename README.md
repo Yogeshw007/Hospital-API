@@ -20,9 +20,9 @@ $ npm start
 To start the server up and running.
 
 ## Tools used
-mongoose
-express
-node
-jwt
-passport
-passport-jwt
+  * mongoose
+  * express
+  * node
+  * jsonwebtoken
+  * passport
+  * passport-jwt
