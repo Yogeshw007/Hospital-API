@@ -3,7 +3,6 @@
 This is an API below are the routes which can register doctor and patients and update the report of the patients also retrieve the patient with status filter.
 
 # Routes:
-- Required Routes
 - /doctors/register → with username and password
 - /doctors/login → returns the JWT to be used
 - /patients/register
