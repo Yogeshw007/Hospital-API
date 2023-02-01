@@ -1,6 +1,7 @@
 const Doctor = require('../models/Doctor');
 const Patient = require('../models/Patient');
 
+// Patient register
 module.exports.register = async function (req, res) {
     try {
         const { phone, name } = req.body;
@@ -39,6 +40,7 @@ module.exports.register = async function (req, res) {
 
 }
 
+// Create report of patients 
 module.exports.createReport = async function (req, res) {
     try {
         const { status } = req.body;

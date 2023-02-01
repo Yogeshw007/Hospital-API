@@ -1,5 +1,6 @@
 const Patient = require('../models/Patient');
 
+// reports with specific status
 module.exports.reports = async function (req, res) {
     let status = req.params.status;
     let patients = await Patient.find({ status });

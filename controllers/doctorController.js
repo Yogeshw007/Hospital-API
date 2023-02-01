@@ -1,6 +1,7 @@
 const Doctor = require('../models/Doctor');
 const jwt = require('jsonwebtoken');
 
+// register doctor
 module.exports.register = async function (req, res) {
     const {
         username,
@@ -25,6 +26,7 @@ module.exports.register = async function (req, res) {
     });
 }
 
+// login doctor
 module.exports.login = async function (req, res) {
     const {
         username,
