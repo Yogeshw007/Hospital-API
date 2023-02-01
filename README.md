@@ -23,6 +23,6 @@ To start the server up and running.
   * mongoose
   * express
   * node
-  * jwt
+  * jsonwebtoken
   * passport
   * passport-jwt
