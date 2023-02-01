@@ -6,10 +6,6 @@ const patientSchema = mongoose.Schema({
         ref: 'Doctor',
         required: true
     },
-    status: {
-        type: String,
-        enum: ["Negative", "Travelled - Quarantine", "Symptoms - Quarantine", "Positive - Admit"]
-    },
     phone: {
         type: String,
         required: true
@@ -17,7 +13,18 @@ const patientSchema = mongoose.Schema({
     name: {
         type: String,
         required: true
-    }
+    },
+    status: [
+        {
+            type: String,
+            enum: ["Negative", "Travelled-Quarantine", "Symptoms-Quarantine", "Positive-Admit"]
+        }
+    ],
+    date: [
+        {
+            type: Date,
+        }
+    ]
 }, {
     timestamps: true
 });
