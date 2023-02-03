@@ -83,7 +83,10 @@ module.exports.genereteAllReports = async function (req, res) {
         let patient = await Patient.findById(req.params.id);
 
         let statusOfPatient = patient.status.map((status, index) => {
-            return `${status} - ${patient.date[index]}`
+            return {
+                status: status,
+                date: patient.date[index]
+            }
         });
 
         return res.json(200, {
